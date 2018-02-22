@@ -1,6 +1,6 @@
 # sails-docker
 
-Dockerfile for the [`jaysong/sails:latest`](https://hub.docker.com/r/jaysong/gradle/)
+Dockerfile for the [`jaysong/sails:9.5-beta`](https://hub.docker.com/r/jaysong/gradle/)
 Docker Hub image which contains Node and Sails.
 
 ## Feature:
@@ -14,10 +14,10 @@ Docker Hub image which contains Node and Sails.
 ## How-To:
 Work with the current directory which contains a Sails app:
 ```
-docker run -it --name sails -p 1337:1337 -v $(pwd):/app jaysong/sails:latest bash
+docker run -it --name sails -p 1337:1337 -v $(pwd):/app jaysong/sails:9.5-beta bash
 ```
 
 Run a sails command directly:
 ```
-docker run -it --rm -p 1337:1337 -v $(pwd):/app jaysong/sails:latest sails lift
+docker run -it --rm -p 1337:1337 -v $(pwd):/app jaysong/sails:9.5-beta sails lift
 ```
